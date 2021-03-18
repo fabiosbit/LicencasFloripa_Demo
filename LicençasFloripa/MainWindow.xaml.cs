@@ -1,8 +1,6 @@
 ﻿using LicençasFloripa.Views;
-using System.Diagnostics;
 using System.Globalization;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Markup;
 
 namespace LicençasFloripa
@@ -24,12 +22,7 @@ namespace LicençasFloripa
             DataContext = viewControl;
         }
 
-        string floripasec;
-
-        //public static string Version
-        //{
-        //    get { return Assembly.GetExecutingAssembly().GetName().Version.ToString(); }     tentando mostrar a versão do programa
-        //}
+        string floripasec;  //app de geração de licenças removido para a verão demo
 
         public void CadastrarSigna_Click(object sender, RoutedEventArgs e)
         {
@@ -124,24 +117,26 @@ namespace LicençasFloripa
 
         private void FloripaSec_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                Process.Start(@"Anexos\" + floripasec);
-            }
-            catch (System.Exception erro)
-            {
-                new CaixaDeMensagem(erro.Message);
-            }
+            new CaixaDeMensagem("Removido na versão demo");
+
+            //try
+            //{
+            //    Process.Start(@"Anexos\" + floripasec);
+            //}
+            //catch (System.Exception erro)
+            //{
+            //    new CaixaDeMensagem(erro.Message);
+            //}
         }
 
         private void FlopSec233_Checked(object sender, RoutedEventArgs e)
         {
-            floripasec = "FloripaSec233.exe";
+            //floripasec = "demo.exe";
         }
 
         private void FlopSec108_Checked(object sender, RoutedEventArgs e)
         {
-            floripasec = "FloripaSec108.exe";
+            //floripasec = "demo.exe";
         }
 
         private void Pendencias_Click(object sender, RoutedEventArgs e)

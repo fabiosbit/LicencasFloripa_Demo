@@ -1,12 +1,6 @@
 ﻿using LicençasFloripa.Views;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace LicençasFloripa.Models
 {
@@ -48,10 +42,12 @@ namespace LicençasFloripa.Models
                 sqlcmd.Parameters.AddWithValue("@Ativo", Ativo);
                 sqlcmd.ExecuteNonQuery();
 
-                //exporta um arquivo xls no servidor SQL com o conteúdo da tabela Premium:
-                SqlCommand exportXls = new SqlCommand("ExportaPremium", sqlcon);
-                exportXls.CommandType = CommandType.StoredProcedure;
-                exportXls.ExecuteNonQuery();
+                //executa um procedimento SQL que exporta um arquivo xls no servidor com o conteúdo da tabela Premium:
+                //procedimento retirado para a versão demo:
+
+                    //SqlCommand exportXls = new SqlCommand("ExportaPremium", sqlcon);
+                    //exportXls.CommandType = CommandType.StoredProcedure;
+                    //exportXls.ExecuteNonQuery();
 
                 new CaixaDeMensagem("Dados Atualizados Com Sucesso!");
 

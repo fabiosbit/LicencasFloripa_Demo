@@ -49,7 +49,11 @@
                 <DataGridTextColumn Binding="{Binding Negócio}" Header="Negócio"/>
                 <DataGridTextColumn Binding="{Binding Observações}" Header="Observações"/>
             </DataGrid.Columns>
-        </DataGrid>
 
+            <DataGrid.ToolTip>
+                <ToolTip VerticalOffset="-50">Duplo clique para editar.</ToolTip>
+            </DataGrid.ToolTip>
+
+        </DataGrid>
     </Grid>
 </UserControl>

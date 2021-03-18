@@ -41,7 +41,6 @@ namespace LicençasFloripa.Views
         {
             SqlConnection sqlcon = ConexãoDB.obterConexão();
 
-            //prepare the list of rows that need to delete
             List<DataRow> listaAddDevedores = new List<DataRow>();
             foreach (DataRowView drRow in GridPesquisaNotas.SelectedItems)
             {
@@ -67,6 +66,8 @@ namespace LicençasFloripa.Views
                     sqlcmd.Parameters.AddWithValue("@Produto", drProduto);
                     sqlcmd.Parameters.AddWithValue("@DataRegistro", data);
                     sqlcmd.ExecuteNonQuery();
+
+                    new CaixaDeMensagem("Adicionado com sucesso!");
                 }
                 catch (SqlException erro)
                 {

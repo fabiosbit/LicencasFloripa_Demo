@@ -77,7 +77,7 @@ namespace LicençasFloripa.Views
                     }
 
 
-                    //Exibe os itens d apágina depois que o usuário pesquisar algo, evitando a tentativa de buscar pelos campos e não pela pesquisa.
+                    //Exibe os itens da apágina depois que o usuário pesquisar algo, evitando a tentativa de buscar pelos campos e não pela caixa de pesquisa.
                     StkPanelColuna1.Visibility = Visibility.Visible;
                     StkPanelColuna2.Visibility = Visibility.Visible;
                     Btn_Salvar.Visibility = Visibility.Visible;

@@ -67,7 +67,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>data-lock_icon-icons.com_52840%282%29.ico</ApplicationIcon>
+    <ApplicationIcon>smalldbicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup />
@@ -289,15 +289,13 @@
     <Resource Include="Anexos\meddbicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="data-lock_icon-icons.com_52840%282%29.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Anexos\FloripaSec108.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Anexos\FloripaSec233.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="smalldbicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

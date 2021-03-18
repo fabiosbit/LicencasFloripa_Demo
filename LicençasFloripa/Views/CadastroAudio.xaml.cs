@@ -70,7 +70,7 @@ namespace LicençasFloripa.Views
                 //Chama o procedimento que executa o comando SQL para escrever na tabela.
                 cadastrarAudio.CadastrarEquip();
 
-                //Limpa todos os campos:
+                //Limpando os campos:
                 Cliente.Clear();
                 Contato.Clear();
                 Senha.Clear();
