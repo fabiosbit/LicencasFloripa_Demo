@@ -1,0 +1,13 @@
+﻿<Window x:Class="LicençasFloripa.Views.CaixaDeMensagem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow" Height="140" MinWidth="100" SizeToContent="Width" ResizeMode="NoResize" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" UseLayoutRounding="True">
+
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock x:Name="MsgBox" Margin="10,0,10,20" FontSize="14"/>
+        <Button x:Name="Btn_Ok" Content="OK" HorizontalAlignment="Center" Click="Btn_Ok_Click" IsDefault="True"/>
+    </StackPanel>
+</Window>

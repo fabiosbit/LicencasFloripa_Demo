@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="LicençasFloripa.Views.PesquisaPremium"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="650">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#FFDBDBFF"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="460"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="10">
+            <Button IsDefault="True" Width="auto" Content="Pesquisar por:" Click="BuscaPremium_Click"></Button>
+            <TextBox x:Name="Box_PesquisarPremium" materialDesign:HintAssist.Hint="Qualquer valor" Width="500" Margin="8"></TextBox>
+        </StackPanel>
+
+        <StackPanel x:Name="StkPanelColuna1" Visibility="Visible" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch">
+            <TextBox x:Name="Cliente" materialDesign:HintAssist.Hint="Cliente (Empresa)" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
+            <TextBox x:Name="Proposta" materialDesign:HintAssist.Hint="Proposta" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
+            <TextBox x:Name="CTO" materialDesign:HintAssist.Hint="Contrato" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
+            <TextBox x:Name="NFPS" materialDesign:HintAssist.Hint="NFPS" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
+            <xctk:MaskedTextBox x:Name="VencCTO" Mask="00/00/0000" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" materialDesign:HintAssist.Hint="Vencimento do Contrato" InsertKeyMode="Overwrite" CaretIndex="1" IncludeLiteralsInValue="False"/>
+            <DockPanel HorizontalAlignment="Left" Margin="10,15,0,0">
+                <TextBlock Text="Status Suporte:  " FontSize="14"/>
+                <RadioButton x:Name="RadAtivo" Foreground="#FF656570" FontSize="14" Content="Ativo" Click="RadAtivo_Click"/>
+                <RadioButton x:Name="RadSuspenso" Foreground="#FF656570" FontSize="14" Content="Suspenso" Margin="15,0,0,0" Click="RadSuspenso_Click"/>
+            </DockPanel>
+        </StackPanel>
+
+
+
+        <StackPanel x:Name="StkPanelColuna2" Visibility="Visible" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch">
+            <xctk:MaskedTextBox x:Name="Data" Mask="00/00/0000" Margin="10" materialDesign:HintAssist.Hint="Data de Registro" Style="{StaticResource MaterialDesignFloatingHintTextBox}" InsertKeyMode="Overwrite"/>
+            <TextBox x:Name="Produto" materialDesign:HintAssist.Hint="Produto" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <TextBox x:Name="SN" materialDesign:HintAssist.Hint="Numero de Série" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <TextBox x:Name="Obs" materialDesign:HintAssist.Hint="Observações" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="2" TextWrapping="Wrap" AcceptsReturn="True"/>
+        </StackPanel>
+
+        <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top">
+            <Button x:Name="Btn_Salvar" Visibility="Visible" Content="Salvar Alterações" Height="35" Width="150" Click="Salvar_Click"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
