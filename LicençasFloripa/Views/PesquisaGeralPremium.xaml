@@ -27,7 +27,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="10">
             <Button IsDefault="True" Width="auto" Content="Pesquisar por:" Click="PesquisarGeralPremium_Click"></Button>
-            <TextBox x:Name="BoxPesquisaGeralPremium" materialDesign:HintAssist.Hint="Informe qualquer dado." Width="500" Margin="8"></TextBox>
+            <TextBox x:Name="BoxPesquisaGeralPremium" materialDesign:HintAssist.Hint="Informe qualquer dado." Width="500" Margin="8" Style="{StaticResource MaterialDesignTextBox}"/>
         </StackPanel>
 
         <DataGrid x:Name="GridBuscaGeralPremium" AutoGenerateColumns="False" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" IsReadOnly="True" SelectionUnit="FullRow"  ClipboardCopyMode="ExcludeHeader" MouseDoubleClick="GridBuscaGeralPremium_MouseDoubleClick" SelectionMode="Single">

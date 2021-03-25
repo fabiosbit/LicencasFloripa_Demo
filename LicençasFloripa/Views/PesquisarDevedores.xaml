@@ -30,9 +30,17 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Foreground="#FF2196F3" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,15,0,0" VerticalAlignment="Top" 
-                   FontSize="26" FontWeight="ExtraBold" HorizontalAlignment="Center">
-        Equipamentos com Pendências Financeiras:</TextBlock>
+        <TextBlock Foreground="#FF2196F3"
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3" 
+                   Margin="0,15,0,0"
+                   VerticalAlignment="Top" 
+                   FontSize="26"
+                   FontWeight="ExtraBold" 
+                   HorizontalAlignment="Center"
+                   Text="Equipamentos com Pendências Financeiras:">
+        </TextBlock>
 
         <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="10,10,10,10">
             <DataGrid x:Name="GridPendencias" AutoGenerateColumns="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" IsReadOnly="True" SelectionUnit="FullRow">

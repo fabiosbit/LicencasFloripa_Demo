@@ -29,22 +29,30 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Foreground="#FF2196F3" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="20" VerticalAlignment="Top" 
-                   FontSize="26" FontWeight="ExtraBold" HorizontalAlignment="Center">
-        Cadastro Suporte Premium</TextBlock>
+        <TextBlock Foreground="#FF2196F3"
+                   Grid.Column="0" 
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   Margin="18" 
+                   VerticalAlignment="Top" 
+                   FontSize="26"
+                   FontWeight="ExtraBold"
+                   HorizontalAlignment="Center"
+                   Text="Cadastro Suporte Premium">
+        </TextBlock>
 
         <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch">
-            <TextBox x:Name="Cliente" materialDesign:HintAssist.Hint="Cliente (Empresa)" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
-            <TextBox x:Name="Proposta" materialDesign:HintAssist.Hint="Proposta" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
-            <TextBox x:Name="CTO" materialDesign:HintAssist.Hint="Contrato" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
-            <TextBox x:Name="NFPS" materialDesign:HintAssist.Hint="NFPS" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto"/>
-            <xctk:MaskedTextBox x:Name="VencCTO" Mask="00/00/0000" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" materialDesign:HintAssist.Hint="Vencimento do Contrato" InsertKeyMode="Overwrite" CaretIndex="1" IncludeLiteralsInValue="False"/>
+            <TextBox x:Name="Cliente" materialDesign:HintAssist.Hint="Cliente (Empresa)" Margin="10"/>
+            <TextBox x:Name="Proposta" materialDesign:HintAssist.Hint="Proposta" Margin="10"/>
+            <TextBox x:Name="CTO" materialDesign:HintAssist.Hint="Contrato" Margin="10"/>
+            <TextBox x:Name="NFPS" materialDesign:HintAssist.Hint="NFPS" Margin="10"/>
+            <xctk:MaskedTextBox x:Name="VencCTO" Mask="00/00/0000" Margin="10" materialDesign:HintAssist.Hint="Vencimento do Contrato" InsertKeyMode="Overwrite" CaretIndex="1" IncludeLiteralsInValue="False"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch">
-            <xctk:MaskedTextBox x:Name="Data" Mask="00/00/0000" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay, StringFormat='dd/MM/yyyy'}" Margin="10" materialDesign:HintAssist.Hint="Data de Registro" Style="{StaticResource MaterialDesignFloatingHintTextBox}" InsertKeyMode="Overwrite"/>
-            <TextBox x:Name="Produto" materialDesign:HintAssist.Hint="Produto" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
-            <TextBox x:Name="SN" materialDesign:HintAssist.Hint="Numero de Série" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
-            <TextBox x:Name="Obs" materialDesign:HintAssist.Hint="Observações" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="10" Width="auto" VerticalScrollBarVisibility="Auto" MaxLines="2" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <xctk:MaskedTextBox x:Name="Data" Mask="00/00/0000" Text="{Binding Source={x:Static sys:DateTime.Now}, Mode=OneWay, StringFormat='dd/MM/yyyy'}" Margin="10" materialDesign:HintAssist.Hint="Data de Registro" InsertKeyMode="Overwrite"/>
+            <TextBox x:Name="Produto" materialDesign:HintAssist.Hint="Produto" Margin="10" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <TextBox x:Name="SN" materialDesign:HintAssist.Hint="Numero de Série" Margin="10" VerticalScrollBarVisibility="Auto" MaxLines="6" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <TextBox x:Name="Obs" materialDesign:HintAssist.Hint="Observações" Margin="10" VerticalScrollBarVisibility="Auto" MaxLines="2" TextWrapping="Wrap" AcceptsReturn="True"/>
         </StackPanel>
 
         <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Top">

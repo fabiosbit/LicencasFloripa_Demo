@@ -27,18 +27,26 @@
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Foreground="#FF2196F3" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="0,15,0,0" VerticalAlignment="Top" 
-                   FontSize="26" FontWeight="ExtraBold" HorizontalAlignment="Center">
-        Pesquisa de Clientes</TextBlock>
+        <TextBlock Foreground="#FF2196F3"
+                   Grid.Column="0"
+                   Grid.Row="0" 
+                   Grid.ColumnSpan="3" 
+                   Margin="0,15,0,0" 
+                   VerticalAlignment="Top" 
+                   FontSize="26" 
+                   FontWeight="ExtraBold"
+                   HorizontalAlignment="Center"
+                   Text="Pesquisa de Clientes">
+        </TextBlock>
 
-        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0" Width="auto">
-            <TextBox x:Name="Nome" materialDesign:HintAssist.Hint="Nome" Style="{StaticResource MaterialDesignFloatingHintTextBox}" GotFocus="Nome_GotFocus"/>
+        <StackPanel Grid.Column="0" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0">
+            <TextBox x:Name="Nome" materialDesign:HintAssist.Hint="Nome" GotFocus="Nome_GotFocus"/>
         </StackPanel>
-        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0" Width="auto">
-            <TextBox x:Name="CodCliente" materialDesign:HintAssist.Hint="Código do Cliente" Style="{StaticResource MaterialDesignFloatingHintTextBox}" GotFocus="CodCliente_GotFocus"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0">
+            <TextBox x:Name="CodCliente" materialDesign:HintAssist.Hint="Código do Cliente" GotFocus="CodCliente_GotFocus"/>
         </StackPanel>
-        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0" Width="auto">
-            <TextBox x:Name="CNPJ" materialDesign:HintAssist.Hint="CNPJ" Style="{StaticResource MaterialDesignFloatingHintTextBox}" GotFocus="CNPJ_GotFocus"/>
+        <StackPanel Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch" Margin="10,-10,10,0">
+            <TextBox x:Name="CNPJ" materialDesign:HintAssist.Hint="CNPJ" GotFocus="CNPJ_GotFocus"/>
         </StackPanel>
 
         <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="10,40,10,10">
