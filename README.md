@@ -1,6 +1,6 @@
 # LicençasFloripa - DEMO
 
-Meu primeiro aplicativo para uso em produção numa empresa real **(está sento utilizado dês de 19/09/2019)**. Desenvolvi enquanto estava aprendendo a linguagem, depois de pronto fiz algumas refatorações para reduzir a quantidade de código repetido e comecei a implementar o padrão de projeto MVVM, mas ainda existe partes que podem ser melhoradas, principalmente a lógica que está no arquivo "PesquisaLicenças.xaml.cs" e deveria ir para a pasta Models.
+Meu primeiro aplicativo para uso em produção numa empresa real **(está sento utilizado dês de 19/09/2019)**. Desenvolvi enquanto estava aprendendo a linguagem, depois de pronto fiz algumas refatorações para reduzir a quantidade de código repetido e comecei a implementar o padrão de projeto MVVM, mas ainda existe partes que podem ser melhoradas, principalmente a lógica que está no arquivo *"PesquisaLicenças.xaml.cs"*, que deveria ir para a pasta Models.
 
 Desenvolvido em C#, WPF e SQL Server **(meu primeiro contato com as três tecnologias).**
 
