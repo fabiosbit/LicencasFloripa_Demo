@@ -50,7 +50,7 @@ namespace LicençasFloripa.Views
                 SqlConnection sqlcon = ConexãoDB.obterConexão();
 
                 List<DataRow> listaDelDevedores = new List<DataRow>();
-
+              
                 foreach (DataRowView drRow in GridPendencias.SelectedItems)
                 {
                     listaDelDevedores.Add(drRow.Row);

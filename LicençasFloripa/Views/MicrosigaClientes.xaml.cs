@@ -27,16 +27,19 @@ namespace LicençasFloripa.Views
                 LikeNome = " ";
             }
 
+            //Bloco try comentado para a versão DEMO.
             try
             {
-                PesquisarMicrossiga cliente = new PesquisarMicrossiga();
-                DataTable dt = cliente.ListarClientes(CodCliente.Text, CNPJ.Text, LikeNome);
-                GridPesquisaClientes.ItemsSource = dt.DefaultView;
+                new CaixaDeMensagem("Pesquisa desabilitada para não expor dados dos clientes. Usuário demo sem premissão de acesso ao DB.");
 
-                if (GridPesquisaClientes.HasItems == false)
-                {
-                    new CaixaDeMensagem("Nenhum Registro Encontrado");
-                }
+                //PesquisarMicrossiga cliente = new PesquisarMicrossiga();
+                //DataTable dt = cliente.ListarClientes(CodCliente.Text, CNPJ.Text, LikeNome);
+                //GridPesquisaClientes.ItemsSource = dt.DefaultView;
+
+                //if (GridPesquisaClientes.HasItems == false)
+                //{
+                //    new CaixaDeMensagem("Nenhum Registro Encontrado");
+                //}
             }
             catch (Exception erro)
             {

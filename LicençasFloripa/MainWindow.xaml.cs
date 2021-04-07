@@ -22,7 +22,8 @@ namespace LicençasFloripa
             DataContext = viewControl;
         }
 
-        string floripasec;  //app de geração de licenças removido para a verão demo
+        //app de geração de licenças removido para a verão demo
+        //string floripasec; 
 
         public void CadastrarSigna_Click(object sender, RoutedEventArgs e)
         {

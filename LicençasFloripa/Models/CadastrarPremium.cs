@@ -39,10 +39,13 @@ namespace LicençasFloripa.Models
                 sqlcmd.Parameters.AddWithValue("@Ativo", 1);
                 sqlcmd.ExecuteNonQuery();
 
+                
+                //Rotina abaixo comentada para a versão DEMO:
+
                 //exporta um arquivo xls no servidor SQL com o conteúdo da tabela Premium:
-                SqlCommand exportXls = new SqlCommand("ExportaPremium", sqlcon);
-                exportXls.CommandType = CommandType.StoredProcedure;
-                exportXls.ExecuteNonQuery();
+                //SqlCommand exportXls = new SqlCommand("ExportaPremium", sqlcon);
+                //exportXls.CommandType = CommandType.StoredProcedure;
+                //exportXls.ExecuteNonQuery();
 
                 new CaixaDeMensagem("Cadastro realizado com sucesso!");
 

@@ -43,6 +43,10 @@
                 <DataGridTextColumn Binding="{Binding Observações}" Header="Observações"/>
                 <DataGridTextColumn Binding="{Binding ID}" Header="ID" Visibility="Hidden"/>
             </DataGrid.Columns>
+
+            <DataGrid.ToolTip>
+                <ToolTip VerticalOffset="-50">Duplo clique para editar.</ToolTip>
+            </DataGrid.ToolTip>
         </DataGrid>
 
         <WrapPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Top">
