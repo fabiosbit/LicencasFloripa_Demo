@@ -6,9 +6,9 @@ Desenvolvido em C#, WPF e SQL Server **(meu primeiro contato com as três tecnol
 
 Versão modificada para utilizar um banco de dados de teste e sem o gerador de licenças, além de removido alguns comentários com informações sensíveis. <br>
 
-Baixe o arquivo **AppCompilado_demo.zip** se quiser apenas testar o software sem precisar compilar o código.
+A pasta **"SQL Procedures"** contém alguns dos procedimentos criados no SQL Server. <br>
 
-A pasta **"SQL Procedures"** contém todos os procedimentos criados no SQL Server. <br><br><br>
+Baixe o arquivo **AppCompilado_demo.zip** se quiser apenas testar o software sem precisar compilar o código. <br><br><br>
 
 ## Abaixo as notas das versões:
 
