@@ -8,7 +8,7 @@ namespace LicençasFloripa.Models
     {
 
         //Conexão com o Banco de Dados SQL Server:
-        private static string StringCon = @"Data Source=floripatec.no-ip.biz,60123\SQLPROTHEUS;Initial Catalog=LicençasDB_teste; User Id=teste; Password=demo#app;";
+        private static string StringCon = @"Data Source=floripatec.no-ip.biz,60123\SQLPROTHEUS;Initial Catalog=LicençasDB_teste;User Id=teste;Password=demo#app;encrypt=yes;trustservercertificate=true;";
 
 
         public static SqlConnection obterConexão()
