@@ -10,6 +10,11 @@ A pasta **"SQL Procedures"** contém alguns dos procedimentos criados no SQL Ser
 
 Baixe o arquivo **AppCompilado_demo.zip** se quiser apenas testar o software sem precisar compilar o código. <br><br><br>
 
+![Main](./Prints/Main.png) 
+![Cadastro](./Prints/Cadastro.png)
+![Pesquisa](./Prints/Pesquisa.png)
+![PesquisaTotvs](./Prints/PesquisaTotvs.png)
+
 ## Abaixo as notas das versões:
 
 **1.0.0.0:** <br>
